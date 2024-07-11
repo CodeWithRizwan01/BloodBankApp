@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.NotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_request"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/color_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Request Blood"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_request"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group:"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_blood_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/et_registration"
+            android:drawableStart="@drawable/baseline_bloodtype_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter Blood Group"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="City:"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_request_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/et_registration"
+            android:drawableStart="@drawable/city"
+            android:drawablePadding="10dp"
+            android:hint="Place Where you need blood"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Active Number:"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_request_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/et_registration"
+            android:drawableStart="@drawable/baseline_format_list_numbered_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter Active contact number"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Location:"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_request_location"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/et_registration"
+            android:hint="Enter your Location Here"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_choose_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select on Map"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/color_primary"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="10dp"
+                android:textSize="16sp" />
+
+
+
+        <EditText
+            android:id="@+id/et_request_messsage"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/et_registration"
+            android:hint="Enter Message for the donor"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="17sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_onboarding"
+            android:text="Add Request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

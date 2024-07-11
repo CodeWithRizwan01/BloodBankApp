@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BloodBank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heading1">Save Lives</string>
+    <string name="heading2">Find Donors</string>
+    <string name="heading3">Track Donations</string>
+    <string name="heading4">Get Alerts</string>
+    <string name="des1">The blood you donate gives someone another chance of life.</string>
+    <string name="des2">Easily  Find Verified Blood Donors and recipients across Pakistan easily.</string>
+    <string name="des3">Keep a record of your blood donations effortlessly.</string>
+    <string name="des4">Receive timely notifications for urgent blood requests.</string>
+    <string name="disclaimer_text">The Blood Bank app is designed to facilitate connections between blood donors and recipients. However, it is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.\n\nWhile we strive to ensure the information provided by our app is accurate and up-to-date, we make no guarantees about the completeness, reliability, or accuracy of the information. Users are responsible for verifying the suitability, credentials, and eligibility of blood donors and recipients.\n\nUsers of the Blood Bank app are solely responsible for the interactions and communications with other users. We do not conduct background checks or verify the medical history of users. It is important to follow proper medical procedures and guidelines when donating or receiving blood.\n\nWe reserve the right to modify this disclaimer at any time. Any changes will be updated within the app, and it is the user’s responsibility to review the disclaimer periodically for any updates.</string>
+
+</resources>

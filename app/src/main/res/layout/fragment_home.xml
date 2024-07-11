@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Donors"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/toolbar_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Find a Blood donor"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/linear_top"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-57dp"
+        android:background="@drawable/et_shape"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="10"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:hint="Search by city"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_disc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/searchBarLayout"
+        android:layout_alignBottom="@+id/searchBarLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_image"
+        android:src="@drawable/info" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_top"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Categories"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categories"
+        android:layout_alignParentStart="true"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:paddingEnd="17dp">
+
+            <!-- Blood group categories -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_all"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:backgroundTint="#D3ECEDED"
+                android:text="All"
+                android:textColor="#F7000000" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_a_positive"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:text="A+"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_a_negative"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:text="A-"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_b_positive"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:text="B+"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_b_negative"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:text="B-"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ab_positive"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:padding="10dp"
+                android:text="AB+"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ab_negative"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:text="AB-"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_o_positive"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:text="O+"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_o_negative"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:padding="10dp"
+                android:backgroundTint="#D3ECEDED"
+                android:background="@drawable/btn_donor_shape"
+                android:text="O-"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tv_no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No results found"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/donors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/horizontal_view"
+
+        android:text="Nearby Donors"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/horizontal_view"
+        android:text="See All"
+        android:textSize="16sp"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/donors"
+        android:clipToPadding="false"
+        android:padding="5dp" />
+
+
+</RelativeLayout>

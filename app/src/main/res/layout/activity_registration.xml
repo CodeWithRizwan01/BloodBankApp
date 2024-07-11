@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_primary"
+    tools:context=".Activities.RegistrationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello,Welcome"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/onboarding_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/onboarding2" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register_donor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Register as donor"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_onboarding"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login_guest"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Login as guest"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_onboarding"
+        />
+
+</LinearLayout>
